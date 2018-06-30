@@ -23,17 +23,7 @@ $(document).ready(function () {
     }).done(function(data) {
       $('#post-form')[0].reset();
       loadMessages()
-    })
-//Original Version    
-//    $.ajax({
-//      type: 'POST',
-//      url: 'discuss.php',
-//      data: { messageData: data }
-//    }).done(function(data) {
-//      $('#post-form')[0].reset();
-//      let toAppend = buildNewMessage(data);
-//      $('.messages').append(toAppend);
-//    })    
+    })   
   })
 
 });
@@ -43,37 +33,24 @@ function loadMessages() {
   $.ajax({
     type:'GET',
     url:'getDiscussionsOld.php',
-    dataType: "html",
+    dataType: "json",
     success:function(data){
       $('.messages').find('.empty').remove();
       $('.messages').find('.message').remove();
-      $('.messages').append(data)
+
+      $.each(data, function(idx, message) {
+        let toAppend = buildMessage(message)
+        $('.messages').append(toAppend);
+      })
     }
   });
 }
 
-function loadMessagesOld() {
-  $.ajax({
-    url: 'discussion.csv',
-    dataType: 'text'
-  }).done(function(data) {
-    let rows = data.split(/\r?\n|\r/);
+function buildMessage(messageData) {
+  let id = messageData.discussion_old_id
+  let text = messageData.text
+  let user = messageData.user_name
+  let date = messageData.created_on
 
-    if (rows.length <= 1) return;
-    $('.messages').find('.empty').remove();
-
-    for (i = 0; i+1 < rows.length; i++) {
-      let toAppend = buildNewMessage(rows[i])
-      $('.messages').append(toAppend)
-    }
-  });
-}
-
-
-function buildNewMessage(toSplit) {
-  let row = toSplit.split(',')
-  let top = "<article class='message'><div><p>"
-  let middle = "</p><span>"
-  let bottom = "</span></div></article>"
-  return top + row[2] + middle + row[1] + ' | ' + row[0] + bottom
+  return `<article class='message'><div><p>${text}</p><span>${user} | ${date}</span></div></article>`
 }
