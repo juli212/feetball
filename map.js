@@ -38,7 +38,7 @@ function getCourts(map) {
 			var marker = new google.maps.Marker({
 				position: latLng,
 				map: map,
-				icon: 'blueMarker.png',
+				icon: 'imgs/blueMarker.png',
 				title: 'feetball court'
 			})
 
