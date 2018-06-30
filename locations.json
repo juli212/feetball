@@ -1,0 +1,122 @@
+{
+	"locations": [
+		{
+			"num": "",
+			"name": "American Playground",
+			"type": "court",
+			"lat": "",
+			"lng": "",
+			"area": "Greenpoint",
+			"address": "",
+			"details": []
+		}, {
+			"num": "",
+			"name": "Roosevelt Island Handball Court",
+			"type": "court",
+			"lat": "",
+			"lng": "",
+			"area": "Roosevelt Island",
+			"address": "",
+			"details": []
+		}, {
+			"num": "",
+			"name": "",
+			"type": "court",
+			"lat": "",
+			"lng": "",
+			"area": "Bushwick",
+			"address": "",
+			"details": ["not available during school hours?"]
+		}, {
+			"num": "",
+			"name": "Pier 2 Handball Courts",
+			"type": "court",
+			"lat": "",
+			"lng": "",
+			"area": "Brooklyn Bridge Park",
+			"address": "",
+			"details": []
+		}, {
+			"num": "",
+			"name": "La Guardia Playground",
+			"type": "court",
+			"lat": "",
+			"lng": "",
+			"area": "Williamsburgh",
+			"address": "",
+			"details": ["court is southeast of the bridge"]
+		}, {
+			"num": "",
+			"name": "Table 87",
+			"type": "food",
+			"lat": "",
+			"lng": "",
+			"area": "Brooklyn Bridge Park",
+			"address": "",
+			"details": ["some of the best pizza"]
+		}, {
+			"num": "",
+			"name": "Roebling Inn",
+			"type": "bar",
+			"lat": "",
+			"lng": "",
+			"area": "Brooklyn Bridge Park",
+			"address": "",
+			"details": []
+		}, {
+			"num": "",
+			"name": "O'Keefe's Bar & Grill",
+			"type": "bar",
+			"lat": "",
+			"lng": "",
+			"area": "Brooklyn Bridge Park",
+			"address": "",
+			"details": []
+		}, {
+			"num": "",
+			"name": "Brooklyn Safehouse",
+			"type": "bar",
+			"lat": "",
+			"lng": "",
+			"area": "Greenpoint",
+			"address": "",
+			"details": ["free pool", "beer and shot special"]
+		}, {
+			"num": "",
+			"name": "Banter Bar",
+			"type": "bar",
+			"lat": "",
+			"lng": "",
+			"area": "Williamsburgh",
+			"address": "",
+			"details": []
+		}, {
+			"num": "",
+			"name": "Horses and Divorces",
+			"type": "bar",
+			"lat": "",
+			"lng": "",
+			"area": "Williamsburgh",
+			"address": "",
+			"details": ["free pool", "beer and shot special"]
+		}, {
+			"num": "",
+			"name": "Father Knows Best",
+			"type": "bar",
+			"lat": "",
+			"lng": "",
+			"area": "Bushwick",
+			"address": "",
+			"details": []
+		}, {
+			"num": "",
+			"name": "Nowadays",
+			"type": "bar",
+			"lat": "",
+			"lng": "",
+			"area": "Bushwick",
+			"address": "",
+			"details": []
+		},
+	]
+}

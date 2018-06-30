@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="scripts.js"></script>
+		<script src="messageboard.js"></script>
+		<title>FeetballNYC</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+  <body>
+
+	  <header>
+			<h1>FeetballNYC</h1>
+			<nav>
+				<ul>
+					<li>
+						<a href='index.html'>HOME</a>
+					</li>
+					<li>
+						<a href='messageboard.html'>DISCUSSION</a>
+					</li>
+					<li>
+						<a href='locations.html'>LOCATIONS</a>
+					</li>
+				</ul>
+			</nav>
+	  </header>
+
+	  <section>
+			<h2>MESSAGEBOARD</h2>
+			<div class="messages">
+				<article class="empty message">
+					<p>no discussion :(</p>
+				</article>
+			</div>
+		</section>
+
+		<section>
+			<form id='post-form'>
+				<h3>fill out the form to post!</h3>
+				<p class="message"></p>
+				<textarea name='post' required='true' required="true" placeholder="post"></textarea>
+				<input type='text' name='from' placeholder='Name' required='true' />
+				<input type='submit' value='post' />
+			</form>
+	 	</section>
+
+	</body>
+	 
+</html>

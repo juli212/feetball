@@ -1,0 +1,251 @@
+/* COLORS
+Grey:  #A9B0B3 | 169,176,179
+Blue:  #20293F | 32,41,63
+
+*/
+
+body * {
+	color: #20293F;
+	position: relative;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Arial", Arial, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body *:focus {
+	outline: none;
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1600px;
+}
+
+body {
+	position: relative;
+}
+
+header {
+	width: 100%;
+	height: 100px;
+	display: block;
+}
+
+header h1 {
+	display: block;
+	font-weight: bold;
+	font-size: 50px;
+	padding: 3px 0;
+}
+
+header nav, header ul {
+	width: 100%;
+}
+
+header ul {
+	background-color: rgba(169,176,179, 0.5);
+}
+
+header ul li {
+	width: 30%;
+	display: inline-block;
+	max-width: 100px;
+}
+
+header ul li a {
+	font-size: 14px;
+	padding: 10px 3px;
+	/*text-decoration: underline;*/
+}
+
+form {
+	width: 100%;
+	margin: 20px auto 10px;
+	padding: 10px 20px;
+}
+
+form textarea,
+form input {
+	width: 100%;
+	height: 40px;
+	margin: 10px auto;
+}
+
+form input[type=submit] {
+	width: 50%;
+}
+
+section {
+	width: 100%;
+	margin: 10px auto;
+}
+
+section:first-of-type {
+	margin-top: 40px;
+}
+
+section img {
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+section form {
+	width: 100%;
+	max-width: 500px;
+	margin: 20px auto 10px;
+	padding: 10px 20px;
+	background-color: rgba(169,176, 179, 0.5);
+}
+
+section textarea,
+section input {
+	width: 100%;
+	margin: 10px auto;
+}
+
+section textarea {
+	height: 120px;
+}
+
+section input {
+	height: 40px;
+}
+
+section input[type=submit] {
+	width: 50%;
+}
+
+article {
+	margin: 5px auto;
+	padding: 5px;
+	border-radius: 2px;
+}
+
+article:nth-child(odd) {
+	background-color: rgba(169,176,179, 0.25);
+}
+
+article:nth-child(even) {
+	background-color: rgba(32,41,63, 0.25);
+}
+
+article p {
+	padding: 5px;
+}
+
+article span {
+	font-size: 10px;
+}
+
+p.bitter {
+	font-size: x-small;
+}
+
+div.add-game {
+	width: 100%;
+	position: absolute;
+	top: 100px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 100;
+	background-color: #20293F;
+}
+
+div.add-game button {
+	position: absolute;
+	left: 0;
+	height: 40px;
+	padding: 0 10px;
+	border: none;
+	font-weight: bold;
+	background-color: #20293F;
+	/*border: 1px solid #20293F;*/
+	border-radius: 2px;
+	color: rgba(169,176,179, 1);
+}
+
+div.add-game form {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+div.add-game form input {
+	display: inline-block;
+	/*height: 40px;*/
+	/*width: 100%;*/
+	margin: 0 0 3px;
+}
+
+div.add-game form input[type=submit] {
+	padding: 0 10px;
+	margin: 3px 0 0;
+	font-weight: bold;
+}
+
+div.add-game a {
+	color: white;
+	padding: 12px 10px;
+	width: auto;
+	font-size: 14px;
+	display: inline-block;
+}
+
+div.add-game .hidden {
+	display: none;
+}
+
+@media only screen and (min-width: 660px) {
+  div.add-game form {
+  	margin: 0 auto;
+  	padding: 0px;
+  }
+
+  div.add-game form input {
+  	width: auto;
+  	/*width: 49%;*/
+  }
+}
+
+#map {
+	position: absolute;
+	top: 100px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	/*height: 200px;*/
+}
+
+.map-buttons {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	/*border: 1px solid green;*/
+}
+
+.map-buttons button {
+	height: 40px;
+	padding: 0 10px;
+	display: inline-block;
+	margin: 10px;
+	font-weight: bold;
+	border-radius: 2px;
+	border: none;
+	opacity: 0.6;
+	background-color: rgba(169,176,179, 1);
+}
+
+.map-buttons button.selected {
+	opacity: 1;
+	background-color: rgba(169,176,179, 0.75);
+}
